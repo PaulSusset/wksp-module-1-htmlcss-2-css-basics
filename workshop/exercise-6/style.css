@@ -16,25 +16,39 @@ body {
 }
 
 h1, h2 {
-    
+	text-align: center;
+	font-family: 'Bangers', cursive;
 }
 
 h1 {
-
+	font-size: 32px;
+	margin: 20px;
 }
 
 h2 {
-
+	font-size: 20px;
+	margin: 10px; 
 }
 
-.row {
 
+.row {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 20px;
+	align-items: center;
+	
 }
 
 .col {
-
+	
+	background-color: lightgrey;
+	list-style: none;
+	padding: 0px 15px 15px 15px;
+	border: 1px;
+	border-style: dashed;
+	vertical-align: middle;
 }
 
 .image {
-
+	height: 150px;
 }

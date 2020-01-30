@@ -1,19 +1,26 @@
 img {
   max-width: 300px;
 }
-
+.container{
+  display: inline-block;
+  align-items: bottom;
+  position: relative;
+}
 .img1 {
 
 }
 
 .img2 {
-
+visibility: hidden;
 }
 
 .img3 {
-
+  visibility: hidden;
+position: absolute;
+right: -300px;
+bottom: 0px
 }
 
 .img4 {
-
+  position: relative;
 }
