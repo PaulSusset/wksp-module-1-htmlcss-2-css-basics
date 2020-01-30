@@ -1,20 +1,29 @@
 img {
     max-width: 300px;
+    display: flex;
+    position: relative;
   }
   
   .img1 {
-  
+  z-index: 1;
   }
   
   .img2 {
-  
+  position: absolute;
+  top: 0px;
+  left: 0px;
   }
   
   .img3 {
-  
+  position: fixed;
+  top: 50%;
+  left: 50%;
   }
   
   .img4 {
-  
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
   }
   
