@@ -31,7 +31,9 @@ Write the CSS to make the cat text blue.
 ```
 
 ```css
-/* css here */
+.feline{
+    color: blue;
+}
 
 ```
 
@@ -48,7 +50,9 @@ Write the CSS to make the cat text blue.
 ```
 
 ```css
-/* css here */
+h2{
+    color: blue;
+}
 
 ```
 
@@ -64,7 +68,9 @@ Write the CSS to make the cat text blue.
 ```
 
 ```css
-/* css here */
+.royalcat{
+  color: blue;
+}
 
 ```
 
@@ -81,7 +87,9 @@ Write the CSS to make the dogs text red.
 ```
 
 ```css
-/* css here */
+.canine{
+    color: red;
+}
 
 ```
 
@@ -98,7 +106,9 @@ Write the CSS to make the dogs text red.
 ```
 
 ```css
-/* css here */
+h1{
+    color: red;
+}
 
 ```
 
@@ -119,7 +129,7 @@ p {
 }
 
 ```
-
+blue
 ---
 
 ## The Box Model
@@ -154,7 +164,8 @@ Every HTML element is a box that has 4 properties.
     - `margin: 20px 10px 5px 0`
     - `margin: 20px 10px`
     - `margin: 20px`
-
+Top can be top and bottom (or all)
+right can be right and left (if you type 3 values for example)
 ---
 
 ### Example
@@ -172,7 +183,7 @@ What is the width and height of this box?
     width: 100px;
 }
 ```
-
+width: 170px height: 170px
 ---
 
 We can fix this with the `box-sizing` CSS property.
@@ -184,7 +195,7 @@ We can fix this with the `box-sizing` CSS property.
 ```
 
 _What is the meaning of `*`?_
-
+Everything
 ---
 
 <img src='./assets/box_example.png' />
@@ -351,9 +362,9 @@ There are other properties you can give the parent container:
 
 | property          | notes |
 | ----------------- | ----- |
-| `flex-direction`  | default is `row`
-| `flex-wrap`       | default is `nowrap`
-| `justify-content` | main axis
+| `flex-direction`  | default is `row` (alternatives are column)
+| `flex-wrap`       | default is `nowrap` (alternative is wrap, adjust container/box to adjust wrap area)
+| `justify-content` | main axis (center, top, right, left, bottom, space-between, space-around)
 | `align-items`     | secondary axis
 | `align-content`   | needs mult. rows
 
@@ -375,7 +386,7 @@ The most common recipe for a container is
 
 | property      | notes |
 | ------------- | ----- |
-| `flex-grow`   | takes up space proportionally
+| `flex-grow`   | takes up space proportionally (see defaults below)
 | `flex-shrink` | shrink if possible
 | `flex-basis`  | default size
 | `order`       | modify source order
